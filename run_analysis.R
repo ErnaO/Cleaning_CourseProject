@@ -49,7 +49,7 @@ sub_data <- total[,c(1,2,sel_col)]
 ## Step 3: Use descriptive names to name the activities in the data set
 for (i in 1:6){
     idx <- which(sub_data$Activity == act_desc[i,1])
-    sub_data$Activity <- as.character(act_desc[i,2])
+    sub_data$Activity[idx] <- as.character(act_desc[i,2])
 }
 
 
