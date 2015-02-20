@@ -23,7 +23,7 @@ colnames <- read.table("./features.txt",sep="") # Needed for step 4
 # First merge the columns of the training data into one data frame
 trainset <- cbind(train_id,train_label,train_set)
 
-# And merge the columns of the test data into one data fram
+# And merge the columns of the test data into one data frame
 
 testset <- cbind(test_id,test_label,test_set)
 # And then merge test and train data into one set
@@ -36,7 +36,6 @@ colnames(total) <- c("SubjectID","Activity",as.character(colnames[,2]))
 
 ## Step 2: Make subset with only means and stds
 # Find the columns that contains means and standard deviations
-col_mean <- grep('Mean',names(total),ignore.case=T)
 col_mean <- setdiff(grep("mean",names(total),ignore.case=T),grep("freq",names(total),ignore.case=T))
 col_std <-  grep('std',names(total),ignore.case=T)
 
@@ -48,11 +47,9 @@ sub_data <- total[,c(1,2,sel_col)]
 
 
 ## Step 3: Use descriptive names to name the activities in the data set
-# The activities can be found in column 2 of the data set
-#sub_data$Avtivity <-as.character(sub_data[,2])
 for (i in 1:6){
     idx <- which(sub_data$Activity == act_desc[i,1])
-    sub_data[idx,2] <- as.character(act_desc[i,2])
+    sub_data$Activity <- as.character(act_desc[i,2])
 }
 
 
