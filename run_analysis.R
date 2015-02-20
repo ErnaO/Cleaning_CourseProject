@@ -30,33 +30,35 @@ testset <- cbind(test_id,test_label,test_set)
 total <- rbind(trainset,testset)
 
 
+## Step 4: Add the variable names as columnnames
+colnames(total) <- c("SubjectID","Activity",as.character(colnames[,2]))
+
+
 ## Step 2: Make subset with only means and stds
 # Find the columns that contains means and standard deviations
-col_mean <- grep('Mean',colnames[,2],ignore.case=T)
-col_std <-  grep('std',colnames[,2],ignore.case=T)
+col_mean <- grep('Mean',names(total),ignore.case=T)
+col_mean <- setdiff(grep("mean",names(total),ignore.case=T),grep("freq",names(total),ignore.case=T))
+col_std <-  grep('std',names(total),ignore.case=T)
 
 # Put them into one sorted vector 
 sel_col <- sort(c(col_mean,col_std))
 
 # Get the subset of the data
-sub_data <- total[,c(1,2,sel_col+2)]# Add 2, as the first two columns are ID and activity
+sub_data <- total[,c(1,2,sel_col)]
 
 
 ## Step 3: Use descriptive names to name the activities in the data set
 # The activities can be found in column 2 of the data set
-sub_data[,2] <-as.character(sub_data[,2])
+#sub_data$Avtivity <-as.character(sub_data[,2])
 for (i in 1:6){
-    idx <- which(sub_data$V1.1 == act_desc[i,1])
+    idx <- which(sub_data$Activity == act_desc[i,1])
     sub_data[idx,2] <- as.character(act_desc[i,2])
 }
 
-## Step 4: Add descriptive variable names
-# Select the column names we are using
-UseCol <- c('SubjectID','Activity',as.character(colnames[(sel_col),2]))
-colnames(sub_data) <- UseCol
 
 ## Step 5: Create a tidy set with the average of each variable for each activity and each subject
-subject <- group_by(sub_data,SubjectID,Activity)
-summarise(subject,mean('tBodyAcc-mean()-X',na.rm=T))
+res <- sub_data %>% group_by(SubjectID,Activity) %>% summarise_each(funs(mean))
+
 
 # Writing the cleaned data to a csv-file
+write.table(res,file="./CleanedSet.txt",row.name=F)
