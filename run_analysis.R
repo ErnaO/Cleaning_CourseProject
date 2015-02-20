@@ -56,5 +56,7 @@ UseCol <- c('SubjectID','Activity',as.character(colnames[(sel_col),2]))
 colnames(sub_data) <- UseCol
 
 ## Step 5: Create a tidy set with the average of each variable for each activity and each subject
-    
+subject <- group_by(sub_data,SubjectID,Activity)
+summarise(subject,mean('tBodyAcc-mean()-X',na.rm=T))
+
 # Writing the cleaned data to a csv-file
