@@ -5,7 +5,8 @@ Thirty volunteers each performed 6 activities, wearing a smartphone. During thes
 This raw data can be downloaded from
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The first two variables are descriptive  
+The first two variables are descriptive
+
 **SubjectID**  
 Running from 1:30, a combination of the original train and test set
 
