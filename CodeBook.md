@@ -5,7 +5,7 @@ Thirty volunteers each performed 6 activities, wearing a smartphone. During thes
 This raw data can be downloaded from
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The first two variables are
+The first two variables are descriptive  
 **SubjectID**  
 Running from 1:30, a combination of the original train and test set
 
@@ -61,7 +61,7 @@ Average of the mean of the gravity acceleration magnitude in m/s^2 (time domain)
 **tGravityAccMag-std()**  
 Average of the standard deviation of the gravity acceleration magnitude in m/s^2 (time domain)
 
-**tBodyAccJerkMag-mean()** 
+**tBodyAccJerkMag-mean()**  
 Average of the mean of the body acceleration magnitude of the Jerk signals in m/s^2 (time domain) 
 
 **tBodyAccJerkMag-std()**  
@@ -70,7 +70,7 @@ Average of the standard deviation of the body acceleration magnitude of the Jerk
 **tBodyGyroMag-mean()**  
 Average of the mean of the gyroscope acceleration magnitude in m/s^2 (time domain)
 
-**tBodyGyroMag-std()** 
+**tBodyGyroMag-std()**  
 Average of the standard deviation of the gyroscope acceleration magnitude in m/s^2 (time domain)
 
 **tBodyGyroJerkMag-mean()**  
@@ -103,7 +103,7 @@ Average of the mean of the body acceleration magnitude in Hz (frequency domain)
 **fBodyAccMag-std()**  
 Average of the standard deviation of the body acceleration magnitude in Hz (frequency domain)
 
-**fBodyBodyAccJerkMag-mean()** 
+**fBodyBodyAccJerkMag-mean()**  
 Average of the mean of the body acceleration magnitude of the Jerk signals in Hz (frequency domain) 
 
 **fBodyBodyAccJerkMag-std()**  
@@ -115,7 +115,7 @@ Average of the mean of the gyroscope acceleration magnitude in Hz (frequency dom
 **fBodyBodyGyroMag-std()**  
 Average of the standard deviation of the gyroscope acceleration magnitude in Hz (frequency domain)
 
-**fBodyBodyGyroJerkMag-mean()**
+**fBodyBodyGyroJerkMag-mean()**  
 Average of the mean of the body gyroscope magnitude of the Jerk signals in Hz (frequency domain) 
   
 **fBodyBodyGyroJerkMag-std()**  
