@@ -6,10 +6,10 @@ This raw data can be downloaded from
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The first two variables are
-**SubjectID** 
-...running from 1:30, a combination of the original train and test set
+**SubjectID**  
+Running from 1:30, a combination of the original train and test set
 
-**Activity** describing 6 activities 
+**Activity** describing 6 activities  
    LAYING   
    SITTING   
    STANDING   
@@ -34,72 +34,114 @@ Average of the standard deviation of the gravity acceleration in X, Y, and Z dir
 **tBodyAccJerk-mean()-XYZ**  
 Average of the mean of the body acceleration of the Jerk signals in X, Y, and Z direction (3 variables) in m/s^2 (time domain)
 
-** tBodyAccJerk-std()-XYZ**  
+**tBodyAccJerk-std()-XYZ**  
 Average of the standard deviation of the body acceleration of the Jerk signals in X, Y, and Z direction (3 variables) in m/s^2 (time domain)
 
-** tBodyGyro-mean()-XYZ**  
+**tBodyGyro-mean()-XYZ**  
+Average of the mean of the body gyroscope in X, Y, and Z direction (3 variables) in m/s^2 (time domain)
 
+**tBodyGyro-std()-XYZ**  
+Average of the standard deviation of the body gyroscope in X, Y, and Z direction (3 variables) in m/s^2 (time domain)
 
-"24" "tBodyGyro-std()-X"
-"25" "tBodyGyro-std()-Y"
-"26" "tBodyGyro-std()-Z"
-"27" "tBodyGyroJerk-mean()-X"
-"28" "tBodyGyroJerk-mean()-Y"
-"29" "tBodyGyroJerk-mean()-Z"
-"30" "tBodyGyroJerk-std()-X"
-"31" "tBodyGyroJerk-std()-Y"
-"32" "tBodyGyroJerk-std()-Z"
-"33" "tBodyAccMag-mean()"
-"34" "tBodyAccMag-std()"
-"35" "tGravityAccMag-mean()"
-"36" "tGravityAccMag-std()"
-"37" "tBodyAccJerkMag-mean()"
-"38" "tBodyAccJerkMag-std()"
-"39" "tBodyGyroMag-mean()"
-"40" "tBodyGyroMag-std()"
-"41" "tBodyGyroJerkMag-mean()"
-"42" "tBodyGyroJerkMag-std()"
-"43" "fBodyAcc-mean()-X"
-"44" "fBodyAcc-mean()-Y"
-"45" "fBodyAcc-mean()-Z"
-"46" "fBodyAcc-std()-X"
-"47" "fBodyAcc-std()-Y"
-"48" "fBodyAcc-std()-Z"
-"49" "fBodyAccJerk-mean()-X"
-"50" "fBodyAccJerk-mean()-Y"
-"51" "fBodyAccJerk-mean()-Z"
-"52" "fBodyAccJerk-std()-X"
-"53" "fBodyAccJerk-std()-Y"
-"54" "fBodyAccJerk-std()-Z"
-"55" "fBodyGyro-mean()-X"
-"56" "fBodyGyro-mean()-Y"
-"57" "fBodyGyro-mean()-Z"
-"58" "fBodyGyro-std()-X"
-"59" "fBodyGyro-std()-Y"
-"60" "fBodyGyro-std()-Z"
-"61" "fBodyAccMag-mean()"
-"62" "fBodyAccMag-std()"
-"63" "fBodyBodyAccJerkMag-mean()"
-"64" "fBodyBodyAccJerkMag-std()"
-"65" "fBodyBodyGyroMag-mean()"
-"66" "fBodyBodyGyroMag-std()"
-"67" "fBodyBodyGyroJerkMag-mean()"
-"68" "fBodyBodyGyroJerkMag-std()"
-"69" "angle(tBodyAccMean,gravity)"
-"70" "angle(tBodyAccJerkMean),gravityMean)"
-"71" "angle(tBodyGyroMean,gravityMean)"
-"72" "angle(tBodyGyroJerkMean,gravityMean)"
-"73" "angle(X,gravityMean)"
-"74" "angle(Y,gravityMean)"
-"75" "angle(Z,gravityMean)"
+**tBodyGyroJerk-mean()-XYZ**  
+Average of the mean of the body gyroscope of the Jerk signals in X, Y, and Z direction (3 variables) in m/s^2 (time domain)
 
+**tBodyGyroJerk-std()-XYZ**  
+Average of the standard deviation of the body gyroscope of the Jerk signals in X, Y, and Z direction (3 variables) in m/s^2 (time domain)
 
+**tBodyAccMag-mean()**  
+Average of the mean of the body acceleration magnitude in m/s^2 (time domain)
 
-Furthermore, the average of the angle-variables were computed:
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+**tBodyAccMag-std()**  
+Average of the standard deviation of the body acceleration magnitude in m/s^2 (time domain)
+
+**tGravityAccMag-mean()**  
+Average of the mean of the gravity acceleration magnitude in m/s^2 (time domain)
+
+**tGravityAccMag-std()**  
+Average of the standard deviation of the gravity acceleration magnitude in m/s^2 (time domain)
+
+**tBodyAccJerkMag-mean()** 
+Average of the mean of the body acceleration magnitude of the Jerk signals in m/s^2 (time domain) 
+
+**tBodyAccJerkMag-std()**  
+Average of the standard deviation of the body acceleration magnitude of the Jerk signals in m/s^2 (time domain) 
+
+**tBodyGyroMag-mean()**  
+Average of the mean of the gyroscope acceleration magnitude in m/s^2 (time domain)
+
+**tBodyGyroMag-std()** 
+Average of the standard deviation of the gyroscope acceleration magnitude in m/s^2 (time domain)
+
+**tBodyGyroJerkMag-mean()**  
+Average of the mean of the body gyroscope magnitude of the Jerk signals in m/s^2 (time domain) 
+
+**tBodyGyroJerkMag-std()**  
+Average of the standard deviation of the body gyroscope magnitude of the Jerk signals in m/s^2 (time domain) 
+
+**fBodyAcc-mean()-XYZ**  
+Average of the mean of the body acceleration in X, Y, and Z direction (3 variables) in Hz (frequency domain)
+
+**fBodyAcc-std()-XYZ**  
+Average of the standard deviation of the body acceleration in X, Y, and Z direction (3 variables) in Hz (frequency domain)
+
+**fBodyAccJerk-mean()-XYZ**  
+Average of the mean of the body acceleration of the Jerk signals in X, Y, and Z direction (3 variables) in Hz (frequency domain)
+
+**fBodyAccJerk-std()-XYZ**  
+Average of the standard deviation of the body acceleration of the Jerk signals in X, Y, and Z direction (3 variables) in Hz (frequency domain)
+
+**fBodyGyro-mean()-XYZ**  
+Average of the mean of the body gyroscope in X, Y, and Z direction (3 variables) in Hz (frequency domain)
+
+**fBodyGyro-std()-XYZ**  
+Average of the standard deviation of the body gyroscope in X, Y, and Z direction (3 variables) in Hz (frequency domain)
+
+**fBodyAccMag-mean()**  
+Average of the mean of the body acceleration magnitude in Hz (frequency domain)
+
+**fBodyAccMag-std()**  
+Average of the standard deviation of the body acceleration magnitude in Hz (frequency domain)
+
+**fBodyBodyAccJerkMag-mean()** 
+Average of the mean of the body acceleration magnitude of the Jerk signals in Hz (frequency domain) 
+
+**fBodyBodyAccJerkMag-std()**  
+Average of the standard deviation of the body acceleration magnitude of the Jerk signals in Hz (frequency domain) 
+
+**fBodyBodyGyroMag-mean()**  
+Average of the mean of the gyroscope acceleration magnitude in Hz (frequency domain)
+
+**fBodyBodyGyroMag-std()**  
+Average of the standard deviation of the gyroscope acceleration magnitude in Hz (frequency domain)
+
+**fBodyBodyGyroJerkMag-mean()**
+Average of the mean of the body gyroscope magnitude of the Jerk signals in Hz (frequency domain) 
+  
+**fBodyBodyGyroJerkMag-std()**  
+Average of the standard deviation of the body gyroscope magnitude of the Jerk signals in Hz (frequency domain) 
+
+And the angles between the different vectors.
+
+**angle(tBodyAccMean,gravity)**  
+Average angle between the body acceleration mean and the gravity vector [rad]
+
+**angle(tBodyAccJerkMean),gravityMean)**  
+Average angle between the body acceleration Jerk mean and the mean gravity vector [rad]
+
+**angle(tBodyGyroMean,gravityMean)**  
+Average angle between the body gyroscope mean and the mean gravity vector [rad]
+
+**angle(tBodyGyroJerkMean,gravityMean)**  
+Average angle between the body gyroscope Jerk mean and the mean gravity vector [rad]
+
+**angle(X,gravityMean)**  
+Average angle between the X axis and the mean gravity vector [rad]
+
+**angle(Y,gravityMean)**  
+Average angle between the Y axis and the mean gravity vector [rad]
+
+**angle(Z,gravityMean)**  
+Average angle between the X axis and the mean gravity vector [rad]
 
 This results in a data set with 73 averages for the above mentioned variables. These are sorted by subjectID and activity.
