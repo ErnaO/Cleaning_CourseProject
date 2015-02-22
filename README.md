@@ -50,3 +50,6 @@ This results in an 6 rows with averages for each subject, one line for each acti
 
 ### Write the output
 The output is written to CleanedSet.txt by using the write.table command.
+
+## Code book
+In the code book I tried to describe all the variables. Unfortonately, not all the variables and their units of measurement were clear to me. So although there is a description, it might not make that much sense...
