@@ -8,13 +8,13 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 The first two variables are
 SubjectID: running from 1:30, a combination of the original train and test set
 
-Activity: describing 6 activities:
-...LAYING 
-...SITTING 
-...STANDING 
-...WALKING 
-...WALKING_DOWNSTAIRS
-...WALKING_UPSTAIRS
+Activity: describing 6 activities:  
+   LAYING   
+   SITTING   
+   STANDING   
+   WALKING   
+   WALKING_DOWNSTAIRS  
+   WALKING_UPSTAIRS
 
 Each subject performed the activity several times. For 180 these combinations (30 subjects with 6 activities) we were interested in the averages of the mean() and std() of the following variables:
 tBodyAcc-XYZ
