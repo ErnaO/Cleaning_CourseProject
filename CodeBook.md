@@ -6,9 +6,10 @@ This raw data can be downloaded from
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The first two variables are
-SubjectID: running from 1:30, a combination of the original train and test set
+SUBJECTID:  
+...running from 1:30, a combination of the original train and test set
 
-Activity: describing 6 activities:  
+ACTIVITY: describing 6 activities:  
    LAYING   
    SITTING   
    STANDING   
